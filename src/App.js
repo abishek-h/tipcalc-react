@@ -30,63 +30,61 @@ const App = () => {
   const final = Number(inputamount) + Number(inputtip) * Number(inputamount);
   const [endamount, setendamount] = useState("");
   const result = () => {
-    setendamount(final / persons);
+    setendamount((final / persons).toFixed(2));
   };
 
   return (
     <div className="App">
-      <body>
-        <div class="king-container">
-          <div class="title">Tip Calculator</div>
-          <div class="container-top">
-            <div class="heading">Total Amount</div>
-            <div>
-              <input
-                onInput={changeamount}
-                type="text"
-                placeholder="$0.00"
-                id="totalbill"
-              />
-            </div>
-            <div class="heading">Tip %</div>
-            <div>
-              <input
-                onInput={changetip}
-                type="text"
-                placeholder="%0.0"
-                id="tip-per"
-              />
-            </div>
+      <div class="king-container">
+        <div class="title">Tip Calculator</div>
+        <div class="container-top">
+          <div class="heading">Total Amount</div>
+          <div>
+            <input
+              onInput={changeamount}
+              type="text"
+              placeholder="$0.00"
+              id="totalbill"
+            />
           </div>
-          <div class="container-bottom">
-            <div class="bottom-left">
-              <div class="text">People</div>
-              <div class="operations">
-                <div class="button">
-                  <button onClick={add}>+</button>
-                </div>
-                <div class="n-o-p" id="no-of-ppl">
-                  {persons}
-                </div>
-                <div class="button">
-                  <button onClick={sub}>-</button>
-                </div>
-              </div>
-            </div>
-            <div class="bottom-right">
-              <div class="text">Total Per Person</div>
-              <div class="amount-pp" id="amount-p-p">
-                ${endamount}
-              </div>
-            </div>
-          </div>
-          <div class="generate-button">
-            <button id="generate" onClick={result}>
-              Generate
-            </button>
+          <div class="heading">Tip %</div>
+          <div>
+            <input
+              onInput={changetip}
+              type="text"
+              placeholder="%0.0"
+              id="tip-per"
+            />
           </div>
         </div>
-      </body>
+        <div class="container-bottom">
+          <div class="bottom-left">
+            <div class="text">People</div>
+            <div class="operations">
+              <div class="button">
+                <button onClick={add}>+</button>
+              </div>
+              <div class="n-o-p" id="no-of-ppl">
+                {persons}
+              </div>
+              <div class="button">
+                <button onClick={sub}>-</button>
+              </div>
+            </div>
+          </div>
+          <div class="bottom-right">
+            <div class="text">Total Per Person</div>
+            <div class="amount-pp" id="amount-p-p">
+              ${endamount}
+            </div>
+          </div>
+        </div>
+        <div class="generate-button">
+          <button id="generate" onClick={result}>
+            Generate
+          </button>
+        </div>
+      </div>
     </div>
   );
 };
