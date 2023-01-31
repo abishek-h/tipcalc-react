@@ -5,7 +5,7 @@ body {
 .king-container {
   margin: 200px auto;
   width: 340px;
-  height: 310px;
+  height: 340px;
   background: #ffffff;
   border-radius: 1rem;
   display: flex;
@@ -90,4 +90,17 @@ button {
   margin-top: 10px;
   text-align: right;
   color: #003653;
+}
+#generate {
+  background-color: #003653;
+  border-radius: 1rem;
+  width: 5rem;
+  height: 2rem;
+  font-family: "Josefin Sans";
+}
+.generate-button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1rem;
 }
