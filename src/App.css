@@ -104,3 +104,9 @@ button {
   margin-right: auto;
   margin-top: 1rem;
 }
+@media (max-width: 360px) {
+  .king-container {
+    margin-top: 150px;
+    margin-bottom: 0px;
+  }
+}
