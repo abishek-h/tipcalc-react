@@ -4,7 +4,7 @@ body {
 }
 .king-container {
   margin: 200px auto;
-  width: 340px;
+  width: 320px;
   height: 340px;
   background: #ffffff;
   border-radius: 1rem;
@@ -103,4 +103,16 @@ button {
   margin-left: auto;
   margin-right: auto;
   margin-top: 1rem;
+}
+@media (min-width: 360px) {
+  .king-container {
+    margin-top: 150px;
+    margin-right: 1px;
+    margin-left: 1px;
+    margin-bottom: 0px;
+  }
+  body {
+    width: 330px;
+    height: 350px;
+  }
 }
