@@ -104,15 +104,3 @@ button {
   margin-right: auto;
   margin-top: 1rem;
 }
-@media (max-width: 360px) {
-  .king-container {
-    margin-top: 150px;
-    margin-right: 1px;
-    margin-left: 1px;
-    margin-bottom: 0px;
-  }
-  body {
-    width: 330px;
-    height: 350px;
-  }
-}
